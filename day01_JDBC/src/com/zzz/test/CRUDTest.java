@@ -1,6 +1,6 @@
-package com.atguigu.test;
+package com.zzz.test;
 
-import com.atguigu.utils.JDBCUtils;
+import com.zzz.utils.JDBCUtilsOld;
 import org.junit.Test;
 
 import java.sql.*;
@@ -46,7 +46,7 @@ public class CRUDTest {
             //3、创建预编译对象
             statement = connection.createStatement();
             //执行sql
-            int i = statement.executeUpdate("insert into t_user values(null,'admin1','123456',23,'男'),(null,'admin2','123456',23,'男')");
+            int i = statement.executeUpdate("insert into t_user values(null,'admin1','zijiang',23,'男'),(null,'admin2','zijiang',23,'男')");
             System.out.println("结果-->"+i);
         } catch (Exception e) {
             e.printStackTrace();
@@ -85,7 +85,7 @@ public class CRUDTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(null, statement, connection);
+            JDBCUtilsOld.close(null, statement, connection);
         }
     }
 
@@ -106,7 +106,7 @@ public class CRUDTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(null, statement, connection);
+            JDBCUtilsOld.close(null, statement, connection);
         }
     }
 
@@ -127,7 +127,7 @@ public class CRUDTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(rs, statement, connection);
+            JDBCUtilsOld.close(rs, statement, connection);
         }
     }
 
@@ -143,12 +143,12 @@ public class CRUDTest {
             rs = statement.executeQuery("select * from t_user where id = 1");
             while (rs.next()){
                 System.out.println("id:"+rs.getInt(1)+",username:"+rs.getString(2)+",password:"+rs.getString(3)+",age:"+rs.getInt(4)+",sex:"+rs.getString(5));
-//                System.out.println("id:"+rs.getInt("id")+",username:"+rs.getString("username")+",password:"+rs.getString("password")+",age:"+rs.getInt("age")+",sex:"+rs.getString("sex"));
+                //System.out.println("id:"+rs.getInt("id")+",username:"+rs.getString("username")+",password:"+rs.getString("password")+",age:"+rs.getInt("age")+",sex:"+rs.getString("sex"));
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(rs, statement, connection);
+            JDBCUtilsOld.close(rs, statement, connection);
         }
     }
 
@@ -166,7 +166,7 @@ public class CRUDTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(rs, statement, connection);
+            JDBCUtilsOld.close(rs, statement, connection);
         }
     }
 

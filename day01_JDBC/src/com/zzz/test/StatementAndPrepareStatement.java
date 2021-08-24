@@ -1,7 +1,6 @@
-package com.atguigu.test;
+package com.zzz.test;
 
-import com.atguigu.utils.JDBCUtils;
-import org.junit.Test;
+import com.zzz.utils.JDBCUtilsOld;
 
 import java.sql.*;
 import java.util.Scanner;
@@ -56,7 +55,7 @@ public class StatementAndPrepareStatement {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(resultSet, ps, connection);
+            JDBCUtilsOld.close(resultSet, ps, connection);
         }
     }
 
@@ -76,7 +75,7 @@ public class StatementAndPrepareStatement {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "zijiang");
             ps = connection.prepareStatement("insert into t_user values(null,?,?,?,?)");
-           /* ps.setString(1,username);
+            /*ps.setString(1,username);
             ps.setString(2,password);
             ps.setInt(3,age);
             ps.setString(4,sex);*/
@@ -89,7 +88,7 @@ public class StatementAndPrepareStatement {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(null, ps, connection);
+            JDBCUtilsOld.close(null, ps, connection);
         }
     }
 
@@ -114,7 +113,7 @@ public class StatementAndPrepareStatement {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(null, statement, connection);
+            JDBCUtilsOld.close(null, statement, connection);
         }
     }
 
@@ -138,7 +137,7 @@ public class StatementAndPrepareStatement {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(null, statement, connection);
+            JDBCUtilsOld.close(null, statement, connection);
         }
     }
 

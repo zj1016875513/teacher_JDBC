@@ -1,6 +1,6 @@
-package com.atguigu.dao;
+package com.zzz.dao;
 
-import com.atguigu.bean.User;
+import com.zzz.bean.User;
 import org.junit.Test;
 
 import java.util.List;

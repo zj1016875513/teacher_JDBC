@@ -1,4 +1,4 @@
-package com.atguigu.utils;
+package com.zzz.utils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

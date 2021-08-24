@@ -1,9 +1,8 @@
-package com.atguigu.test;
+package com.zzz.test;
 
-import com.atguigu.bean.User;
-import com.atguigu.utils.JDBCUtils;
-import com.atguigu.utils.JDBCUtilsOld;
-import com.atguigu.utils.JDBCUtilsByDruid;
+import com.zzz.bean.User;
+import com.zzz.utils.JDBCUtils;
+import com.zzz.utils.JDBCUtilsOld;
 import org.junit.Test;
 
 import java.sql.*;

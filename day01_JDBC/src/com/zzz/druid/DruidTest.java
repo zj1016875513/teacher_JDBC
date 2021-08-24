@@ -1,4 +1,4 @@
-package com.atguigu.druid;
+package com.zzz.druid;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.junit.Test;

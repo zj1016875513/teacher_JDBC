@@ -1,4 +1,4 @@
-package com.atguigu.test;
+package com.zzz.test;
 
 import java.sql.*;
 

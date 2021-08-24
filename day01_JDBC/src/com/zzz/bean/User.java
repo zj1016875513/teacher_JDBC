@@ -1,4 +1,4 @@
-package com.atguigu.bean;
+package com.zzz.bean;
 
 /**
  * Date:2021/1/8

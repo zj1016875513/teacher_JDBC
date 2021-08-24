@@ -1,6 +1,6 @@
-package com.atguigu.test;
+package com.zzz.test;
 
-import com.atguigu.bean.User;
+import com.zzz.bean.User;
 
 import java.lang.reflect.Field;
 import java.sql.*;

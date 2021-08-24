@@ -1,6 +1,6 @@
-package com.atguigu.test;
+package com.zzz.test;
 
-import com.atguigu.utils.JDBCUtilsOld;
+import com.zzz.utils.JDBCUtilsOld;
 import org.junit.Test;
 
 import java.sql.Connection;
