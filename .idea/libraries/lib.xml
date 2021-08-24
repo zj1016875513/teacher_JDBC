@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day00_JDBC/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day00_JDBC/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day00_JDBC/lib/mysql-connector-java-5.0.8-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
